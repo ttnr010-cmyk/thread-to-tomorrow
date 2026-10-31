@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing | Thread to Tomorrow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-area">
+            <span class="logo">🌿</span>
+            <div>
+                <h1 class="site-name">Thread to Tomorrow</h1>
+                <p class="tagline">The journey of a cotton T-shirt</p>
+            </div>
+        </div>
+
+        <button class="search-icon" id="searchToggle" aria-label="Open search">
+    ⌕
+</button>
+    </header>
+
+    <div class="search-panel" id="searchPanel">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search the clothing journey..."
+        aria-label="Search website"
+    >
+
+    <div id="searchResults"></div>
+</div>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html">
+                <span class="sidebar-icon">⌂</span> Home
+            </a>
+
+            <a href="raw-materials.html">
+                <span class="sidebar-icon">🌱</span> Raw Materials
+            </a>
+
+            <a href="processing.html" class="active">
+                <span class="sidebar-icon">⚙️</span> Processing
+            </a>
+
+            <a href="manufacturing.html">
+                <span class="sidebar-icon">🏭</span> Manufacturing
+            </a>
+
+            <a href="transportation.html">
+                <span class="sidebar-icon">🚢</span> Transportation
+            </a>
+
+            <a href="use.html">
+                <span class="sidebar-icon">👕</span> Use
+            </a>
+
+            <a href="end-of-life.html">
+                <span class="sidebar-icon">♻️</span> End of Life
+            </a>
+            <a href="kenya.html">
+    <span class="sidebar-icon">🇰🇪</span> Journey in Kenya
+</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Introduction -->
+            <section>
+                <h1>Processing</h1>
+                <p>Turning harvested cotton into yarn</p>
+
+                <img
+                    src="images/processing.jpg"
+                    alt="Cotton fibres being processed in a textile factory"
+                    class="hero-image"
+                >
+
+                <p>
+                    After harvesting and ginning, cotton fibres are
+                    transported to processing facilities. Here, the
+                    fibres are cleaned, straightened and spun into yarn.
+                    This prepares the cotton for fabric production.
+                </p>
+            </section>
+
+            <!-- Key Facts -->
+            <section class="info-box processing-box">
+                <h2>⚙️ Key Facts</h2>
+
+                <ul>
+                    <li>Cotton fibres must be cleaned before they can be spun.</li>
+                    <li>Carding separates and arranges the fibres.</li>
+                    <li>Spinning twists the fibres together to produce yarn.</li>
+                    <li>Electricity is used to operate processing machinery.</li>
+                </ul>
+            </section>
+
+            <!-- Processing Stages -->
+            <section>
+                <h2>How Cotton Is Processed</h2>
+                <p>Three main operations prepare cotton fibres for fabric production.</p>
+
+                <div class="card-container">
+
+                    <div class="process-card processing-card">
+                        <img src="images/cleaning.jpg"
+                             alt="Cotton fibres being cleaned">
+
+                        <div class="card-content">
+                            <span class="number">01</span>
+                            <h3>Cleaning</h3>
+                            <p>
+                                Cotton fibres are cleaned to remove
+                                dust, dirt, seeds and other unwanted
+                                materials left after harvesting.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-card processing-card">
+                        <img src="images/carding.jpg"
+                             alt="Cotton fibres going through carding machinery">
+
+                        <div class="card-content">
+                            <span class="number">02</span>
+                            <h3>Carding</h3>
+                            <p>
+                                Machines separate and straighten
+                                the cotton fibres, arranging them
+                                into a continuous, loose strand.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-card processing-card">
+                        <img src="images/spinning.jpg"
+                             alt="Cotton fibres being spun into yarn">
+
+                        <div class="card-content">
+                            <span class="number">03</span>
+                            <h3>Spinning</h3>
+                            <p>
+                                The fibres are drawn out and twisted
+                                together to create stronger, continuous
+                                cotton yarn.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Environmental Impact -->
+            <section class="impact-bar processing-impact">
+
+                <h2>♻️ Environmental Impact</h2>
+
+                <p>
+                    Cotton processing uses electricity and machinery.
+                    Some stages also require water and produce waste.
+                </p>
+
+                <div class="impact-items">
+
+                    <div class="impact-item">
+                        <span class="impact-icon">⚡</span>
+                        <h3>High</h3>
+                        <p>Energy use</p>
+                    </div>
+
+                    <div class="impact-item">
+                        <span class="impact-icon">💧</span>
+                        <h3>Moderate</h3>
+                        <p>Water use</p>
+                    </div>
+
+                    <div class="impact-item">
+                        <span class="impact-icon">🗑️</span>
+                        <h3>Moderate</h3>
+                        <p>Material waste</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Next Stage -->
+            <section class="info-box processing-box">
+                <h2>What Happens Next?</h2>
+
+                <p>
+                    Once the cotton fibres have been spun into yarn,
+                    the yarn is ready to be turned into fabric.
+                    This happens during the manufacturing stage.
+                </p>
+
+                <a href="manufacturing.html">Continue to Manufacturing →</a>
+            </section>
+
+            <footer class="footer">
+                <p>Thread to Tomorrow | The journey of a cotton T-shirt</p>
+            </footer>
+
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

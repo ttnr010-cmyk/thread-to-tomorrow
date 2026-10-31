@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey in Kenya | Thread to Tomorrow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-area">
+            <span class="logo">🌿</span>
+            <div>
+                <h1 class="site-name">Thread to Tomorrow</h1>
+                <p class="tagline">The journey of a cotton T-shirt</p>
+            </div>
+        </div>
+
+        <button class="search-icon" id="searchToggle" aria-label="Open search">
+            ⌕
+        </button>
+    </header>
+
+    <!-- SEARCH PANEL -->
+    <div class="search-panel" id="searchPanel">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search the clothing journey..."
+            aria-label="Search website"
+        >
+        <div id="searchResults"></div>
+    </div>
+
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="index.html">
+                <span class="sidebar-icon">⌂</span> Home
+            </a>
+
+            <a href="raw-materials.html">
+                <span class="sidebar-icon">🌱</span> Raw Materials
+            </a>
+
+            <a href="processing.html">
+                <span class="sidebar-icon">⚙️</span> Processing
+            </a>
+
+            <a href="manufacturing.html">
+                <span class="sidebar-icon">🏭</span> Manufacturing
+            </a>
+
+            <a href="transportation.html">
+                <span class="sidebar-icon">🚢</span> Transportation
+            </a>
+
+            <a href="kenya.html" class="active">
+                <span class="sidebar-icon">🇰🇪</span> Journey in Kenya
+            </a>
+
+            <a href="use.html">
+                <span class="sidebar-icon">👕</span> Use
+            </a>
+
+            <a href="end-of-life.html">
+                <span class="sidebar-icon">♻️</span> End of Life
+            </a>
+            <a href="kenya.html">
+    <span class="sidebar-icon">🇰🇪</span> Journey in Kenya
+</a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- INTRODUCTION -->
+            <section>
+                <h1>🇰🇪 The Journey in Kenya</h1>
+                <h3>Follow the connections behind a cotton T-shirt</h3>
+
+                <p>
+                    Explore how cotton farming, textile production and
+                    clothing markets connect to Kenya. Select each
+                    numbered stop on the map to discover more about
+                    the journey.
+                </p>
+            </section>
+
+
+            <!-- INTERACTIVE MAP -->
+            <section class="kenya-map-section">
+
+                <h2>🗺️ Explore the Map</h2>
+
+                <p>
+                    Select a numbered location to explore its role
+                    in Kenya's clothing industry.
+                </p>
+
+                <div class="kenya-map">
+
+                    <div class="map-heading">
+                        <span>KENYA</span>
+                        <span class="map-subtitle">
+                            THE COTTON AND CLOTHING JOURNEY
+                        </span>
+                    </div>
+
+                    <!-- MAP OUTLINE -->
+                    <svg class="kenya-outline"
+                         viewBox="0 0 500 550"
+                         aria-label="Illustrative outline of Kenya">
+
+                        <polygon
+                            points="180,35 260,55 310,100 390,120
+                            420,190 385,240 405,310 350,365
+                            330,435 275,490 215,465 170,420
+                            115,390 95,325 55,275 85,210
+                            70,145 115,95"
+                            fill="#dcebdc"
+                            stroke="#6d9b78"
+                            stroke-width="5"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M110 180 Q180 220 220 180 T350 210"
+                            fill="none"
+                            stroke="#a4c9a9"
+                            stroke-width="3"
+                        />
+
+                        <path
+                            d="M130 300 Q220 260 300 320 T370 350"
+                            fill="none"
+                            stroke="#a4c9a9"
+                            stroke-width="3"
+                        />
+
+                    </svg>
+
+
+                    <!-- ROUTE -->
+                    <svg class="map-route"
+                         viewBox="0 0 500 550"
+                         preserveAspectRatio="none">
+
+                        <path
+                            d="M145 190 Q190 250 225 300 T285 350 T320 430"
+                            fill="none"
+                            stroke="#8861aa"
+                            stroke-width="5"
+                            stroke-dasharray="10 9"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+
+                    <!-- NUMBERED STOPS -->
+                    <button class="map-stop stop-one active"
+                            data-stop="0"
+                            aria-label="Stop 1: Cotton farming">
+                        1
+                    </button>
+
+                    <button class="map-stop stop-two"
+                            data-stop="1"
+                            aria-label="Stop 2: Cotton processing">
+                        2
+                    </button>
+
+                    <button class="map-stop stop-three"
+                            data-stop="2"
+                            aria-label="Stop 3: Textile manufacturing">
+                        3
+                    </button>
+
+                    <button class="map-stop stop-four"
+                            data-stop="3"
+                            aria-label="Stop 4: Clothing markets">
+                        4
+                    </button>
+
+
+                    <!-- MAP LABELS -->
+                    <span class="map-label label-one">
+                        Eastern / Coastal
+                    </span>
+
+                    <span class="map-label label-two">
+                        Processing
+                    </span>
+
+                    <span class="map-label label-three">
+                        Eldoret
+                    </span>
+
+                    <span class="map-label label-four">
+                        Nairobi
+                    </span>
+
+                    <span class="map-north">N ↑</span>
+
+                </div>
+
+                <p class="map-note">
+                    This is an illustrative map, not a precise
+                    geographical route. The locations represent
+                    different parts of Kenya's clothing industry.
+                </p>
+
+            </section>
+
+
+            <!-- INFORMATION PANEL -->
+            <section class="map-information">
+
+                <div class="map-info-image">
+                    <img
+                        id="mapImage"
+                        src="images/kenya-farming.jpg"
+                        alt="Cotton farming in Kenya"
+                    >
+                </div>
+
+                <div class="map-info-content">
+
+                    <span class="map-stop-number" id="mapNumber">
+                        STOP 01
+                    </span>
+
+                    <h2 id="mapTitle">Cotton Farming</h2>
+
+                    <p class="map-location" id="mapLocation">
+                        Eastern and Coastal Kenya
+                    </p>
+
+                    <p id="mapDescription">
+                        Cotton is grown by farmers in parts of Kenya.
+                        After harvesting, the cotton is collected and
+                        prepared for processing.
+                    </p>
+
+                    <div class="map-navigation">
+
+                        <button id="previousStop" disabled>
+                            ← Previous
+                        </button>
+
+                        <button id="nextStop">
+                            Next Stop →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- GLOBAL CONNECTION -->
+            <section class="info-box kenya-box">
+
+                <h2>🌍 Kenya and the Global Clothing Industry</h2>
+
+                <p>
+                    Kenya's clothing industry is connected to
+                    international supply chains. Some cotton and
+                    fabrics are produced locally, while other
+                    materials and finished garments are imported.
+                </p>
+
+                <p>
+                    This means that a T-shirt bought in Nairobi may
+                    have been manufactured in Kenya or transported
+                    from another country. Its journey depends on
+                    where its materials and finished products came from.
+                </p>
+
+            </section>
+
+
+            <!-- ENVIRONMENTAL CONNECTIONS -->
+            <section class="impact-bar kenya-impact">
+
+                <h2>♻️ Environmental Connections</h2>
+
+                <div class="impact-items">
+
+                    <div class="impact-item">
+                        <span class="impact-icon">💧</span>
+                        <h3>Water</h3>
+                        <p>
+                            Cotton farming and textile processing
+                            use water.
+                        </p>
+                    </div>
+
+                    <div class="impact-item">
+                        <span class="impact-icon">🚢</span>
+                        <h3>Transport</h3>
+                        <p>
+                            Imported clothing travels through
+                            international supply chains.
+                        </p>
+                    </div>
+
+                    <div class="impact-item">
+                        <span class="impact-icon">🗑️</span>
+                        <h3>Textile Waste</h3>
+                        <p>
+                            Unwanted clothing can contribute to
+                            waste if it is not reused.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            Thread to Tomorrow |
+            Revealing the Unseen Through Design
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

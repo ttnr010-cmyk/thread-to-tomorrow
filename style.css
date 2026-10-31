@@ -1,0 +1,1396 @@
+
+/* =================================
+   1. GENERAL WEBSITE SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8FAF7;
+    color: #35443B;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =================================
+   2. WEBSITE HEADER
+================================= */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 35px;
+    border-bottom: 1px solid #E5E9E3;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-name {
+    font-size: 19px;
+    font-weight: bold;
+    color: #245B3D;
+}
+
+.tagline {
+    font-size: 11px;
+    color: #778078;
+    margin-top: 4px;
+}
+
+.search-icon {
+    font-size: 23px;
+    color: #315B42;
+    cursor: pointer;
+}
+
+
+/* =================================
+   3. MAIN WEBSITE LAYOUT
+================================= */
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+
+
+/* =================================
+   4. LEFT SIDEBAR
+================================= */
+
+.sidebar {
+    width: 230px;
+    min-width: 230px;
+    background-color: #FFFFFF;
+    padding: 25px 16px;
+    border-right: 1px solid #E5E9E3;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h3 {
+    font-size: 13px;
+    color: #89938B;
+    margin: 5px 12px 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 13px 12px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    color: #526157;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #F0F5EF;
+}
+
+/* Active sidebar page */
+
+.sidebar a.active {
+    font-weight: bold;
+}
+
+.sidebar a.active.green {
+    background-color: #E4F2E7;
+    color: #245B3D;
+}
+
+.sidebar a.active.blue {
+    background-color: #E3EFFA;
+    color: #245B8A;
+}
+
+.sidebar a.active.amber {
+    background-color: #FFF0D5;
+    color: #98651A;
+}
+
+.sidebar a.active.purple {
+    background-color: #F0E8FA;
+    color: #70449B;
+}
+
+
+/* =================================
+   5. MAIN CONTENT AREA
+================================= */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.page-title {
+    font-size: 30px;
+    color: #245B3D;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #637267;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   6. HOMEPAGE INTRODUCTION
+================================= */
+
+.home-hero {
+    text-align: center;
+    padding: 55px 30px;
+    background-color: #EAF5EB;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.home-hero h1 {
+    font-size: 36px;
+    color: #245B3D;
+    margin-bottom: 15px;
+}
+
+.home-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #526157;
+}
+
+.section-heading {
+    font-size: 20px;
+    color: #245B3D;
+    margin-bottom: 16px;
+}
+
+
+/* =================================
+   7. HOMEPAGE LIFE-CYCLE CARDS
+================================= */
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.journey-card {
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #E3E8E2;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #35443B;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.journey-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.09);
+}
+
+.journey-card img {
+    display: block;
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+}
+
+.journey-card div {
+    padding: 17px;
+}
+
+.journey-card h3 {
+    font-size: 15px;
+    color: #245B3D;
+    margin-bottom: 9px;
+}
+
+.journey-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #68746B;
+}
+
+
+/* =================================
+   8. HERO IMAGES FOR STAGE PAGES
+================================= */
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   9. INFORMATION BOXES
+================================= */
+
+.info-box {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.info-box h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.info-box.green {
+    background-color: #EAF5EB;
+}
+
+.info-box.blue {
+    background-color: #E8F2FA;
+}
+
+.info-box.amber {
+    background-color: #FFF4DF;
+}
+
+.info-box.purple {
+    background-color: #F2EBFA;
+}
+
+
+/* =================================
+   10. PROCESS CARDS
+================================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.process-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E8E2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.process-card img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.number {
+    display: inline-flex;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.number.green {
+    background-color: #438653;
+}
+
+.number.blue {
+    background-color: #397BB5;
+}
+
+.number.amber {
+    background-color: #C18A32;
+}
+
+.number.purple {
+    background-color: #8055A7;
+}
+
+.process-card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #35443B;
+}
+
+.process-card p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #68746B;
+}
+
+
+/* =================================
+   11. ENVIRONMENTAL IMPACT BAR
+================================= */
+
+.impact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.impact-bar.green {
+    background-color: #EAF5EB;
+}
+
+.impact-bar.blue {
+    background-color: #E8F2FA;
+}
+
+.impact-bar.amber {
+    background-color: #FFF4DF;
+}
+
+.impact-bar.purple {
+    background-color: #F2EBFA;
+}
+
+.impact-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.impact-items span {
+    font-size: 12px;
+}
+
+
+/* =================================
+   12. SECTION HEADINGS AND FOOTER
+================================= */
+
+.footer {
+    text-align: center;
+    padding: 22px;
+    color: #7A857C;
+    font-size: 12px;
+    border-top: 1px solid #E5E9E3;
+    margin-top: 30px;
+}
+
+
+/* =================================
+   13. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .journey-grid,
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 15px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        border-right: none;
+        border-bottom: 1px solid #E5E9E3;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .journey-grid,
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero h1 {
+        font-size: 27px;
+    }
+
+    .home-hero {
+        padding: 35px 20px;
+    }
+
+    .impact-bar {
+        align-items: flex-start;
+    }
+}
+
+/* ==================================
+   RAW MATERIALS PAGE
+================================== */
+
+/* Main green headings */
+.main-content h1,
+.main-content h2 {
+    color: #245c3a;
+}
+
+/* Hero image */
+.hero-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #8abf98;
+    margin: 20px 0;
+}
+
+/* Introduction paragraph */
+.main-content > section:first-child > p {
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* Information box */
+.info-box {
+    background-color: #f0f8f1;
+    border: 2px solid #a6cfae;
+    border-left: 6px solid #43875a;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 30px 0;
+}
+
+.info-box h2 {
+    margin-bottom: 12px;
+}
+
+.info-box p,
+.info-box li {
+    line-height: 1.7;
+    color: #435548;
+}
+
+.info-box ul {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+/* Process cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 22px 0 32px;
+}
+
+.raw-card {
+    background-color: #ffffff;
+    border: 2px solid #a6cfae;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(36, 92, 58, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.raw-card:hover {
+    transform: translateY(-5px);
+}
+
+.raw-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.raw-card .card-content {
+    padding: 20px;
+}
+
+.raw-card .number {
+    color: #43875a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.raw-card h3 {
+    color: #245c3a;
+    margin: 10px 0;
+}
+
+.raw-card p {
+    color: #526356;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Environmental impact section */
+.impact-bar {
+    background-color: #e6f3e8;
+    border: 2px solid #8abf98;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.impact-bar h2 {
+    margin-bottom: 10px;
+}
+
+.impact-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.impact-items > div {
+    background-color: #ffffff;
+    border: 1px solid #b4d4bb;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+}
+
+.impact-items h3 {
+    color: #34764a;
+    margin-bottom: 8px;
+}
+
+/* Next stage link */
+.info-box a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #34764a;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.info-box a:hover {
+    background-color: #245c3a;
+}
+
+/* Smaller screens */
+@media (max-width: 750px) {
+    .card-container,
+    .impact-items {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+}
+
+/* Circular process numbers */
+.raw-card .number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #dcefe0;
+    border: 2px solid #43875a;
+    color: #245c3a;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Sidebar icons */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar-icon {
+    width: 25px;
+    min-width: 25px;
+    text-align: center;
+    font-size: 19px;
+}
+
+/* Environmental impact icons */
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.impact-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.impact-item h3 {
+    font-size: 18px;
+}
+
+.impact-item p {
+    color: #526356;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ==================================
+   PROCESSING PAGE
+================================== */
+
+.processing-box {
+    background-color: #edf8f7;
+    border-color: #9acdc5;
+    border-left-color: #398c80;
+}
+
+.processing-box h2 {
+    color: #286d65;
+}
+
+.processing-card {
+    border-color: #9acdc5;
+}
+
+.processing-card .number {
+    background-color: #d9f0ec;
+    border-color: #398c80;
+    color: #286d65;
+}
+
+.processing-card h3 {
+    color: #286d65;
+}
+
+.processing-impact {
+    background-color: #e5f4f1;
+    border-color: #83bdb3;
+}
+
+.processing-impact h2 {
+    color: #286d65;
+}
+
+.processing-impact .impact-items > div {
+    border-color: #a8d2ca;
+}
+
+.processing-impact .impact-items h3 {
+    color: #398c80;
+}
+
+/* Processing card hover effect */
+.processing-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.processing-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(40, 109, 101, 0.18);
+}
+
+/* Slight image zoom on hover */
+.processing-card img {
+    transition: transform 0.3s ease;
+}
+
+.processing-card:hover img {
+    transform: scale(1.04);
+}
+
+/* ==================================
+   MANUFACTURING PAGE
+================================== */
+
+.manufacturing-box {
+    background-color: #fff8e9;
+    border-color: #e8c987;
+    border-left-color: #c58b32;
+}
+
+.manufacturing-box h2 {
+    color: #8b6427;
+}
+
+.manufacturing-card {
+    border-color: #e8c987;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.manufacturing-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(139, 100, 39, 0.18);
+}
+
+.manufacturing-card img {
+    transition: transform 0.3s ease;
+}
+
+.manufacturing-card:hover img {
+    transform: scale(1.04);
+}
+
+.manufacturing-card .number {
+    background-color: #fff0cf;
+    border-color: #c58b32;
+    color: #8b6427;
+}
+
+.manufacturing-card h3 {
+    color: #8b6427;
+}
+
+.manufacturing-impact {
+    background-color: #fff5df;
+    border-color: #e5c47f;
+}
+
+.manufacturing-impact h2 {
+    color: #8b6427;
+}
+
+.manufacturing-impact .impact-items > div {
+    border-color: #e8c987;
+}
+
+.manufacturing-impact .impact-items h3 {
+    color: #a87627;
+}
+
+/* ==================================
+   TRANSPORTATION PAGE
+================================== */
+
+.transportation-box {
+    background-color: #edf5fc;
+    border-color: #a5c6e5;
+    border-left-color: #3979b5;
+}
+
+.transportation-box h2 {
+    color: #285d8d;
+}
+
+.transportation-card {
+    border-color: #a5c6e5;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.transportation-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(40, 93, 141, 0.18);
+}
+
+.transportation-card img {
+    transition: transform 0.3s ease;
+}
+
+.transportation-card:hover img {
+    transform: scale(1.04);
+}
+
+.transportation-card .number {
+    background-color: #e0effc;
+    border-color: #3979b5;
+    color: #285d8d;
+}
+
+.transportation-card h3 {
+    color: #285d8d;
+}
+
+.transportation-impact {
+    background-color: #e7f1fa;
+    border-color: #a5c6e5;
+}
+
+.transportation-impact h2 {
+    color: #285d8d;
+}
+
+.transportation-impact .impact-items > div {
+    border-color: #a5c6e5;
+}
+
+.transportation-impact .impact-items h3 {
+    color: #3979b5;
+}
+
+/* ==================================
+   USE PAGE
+================================== */
+
+.use-box {
+    background-color: #f5f0fa;
+    border-color: #cbb6df;
+    border-left-color: #8861aa;
+}
+
+.use-box h2 {
+    color: #69468c;
+}
+
+.use-card {
+    border-color: #cbb6df;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.use-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(105, 70, 140, 0.18);
+}
+
+.use-card img {
+    transition: transform 0.3s ease;
+}
+
+.use-card:hover img {
+    transform: scale(1.04);
+}
+
+.use-card .number {
+    background-color: #eee3f7;
+    border-color: #8861aa;
+    color: #69468c;
+}
+
+.use-card h3 {
+    color: #69468c;
+}
+
+.use-impact {
+    background-color: #f0e9f7;
+    border-color: #c3addb;
+}
+
+.use-impact h2 {
+    color: #69468c;
+}
+
+.use-impact .impact-items > div {
+    border-color: #cbb6df;
+}
+
+.use-impact .impact-items h3 {
+    color: #8861aa;
+}
+
+/* ==================================
+   END OF LIFE PAGE
+================================== */
+
+.end-box {
+    background-color: #f5f0fa;
+    border-color: #cbb6df;
+    border-left-color: #8861aa;
+}
+
+.end-box h2 {
+    color: #69468c;
+}
+
+.end-card {
+    border-color: #cbb6df;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.end-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(105, 70, 140, 0.18);
+}
+
+.end-card img {
+    transition: transform 0.3s ease;
+}
+
+.end-card:hover img {
+    transform: scale(1.04);
+}
+
+.end-card .number {
+    background-color: #eee3f7;
+    border-color: #8861aa;
+    color: #69468c;
+}
+
+.end-card h3 {
+    color: #69468c;
+}
+
+.end-impact {
+    background-color: #f0e9f7;
+    border-color: #c3addb;
+}
+
+.end-impact h2 {
+    color: #69468c;
+}
+
+.end-impact .impact-items > div {
+    border-color: #cbb6df;
+}
+
+.end-impact .impact-items h3 {
+    color: #8861aa;
+}
+/* SEARCH FUNCTION */
+
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #245c3a;
+    cursor: pointer;
+}
+
+.search-panel {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    width: 320px;
+    background: white;
+    border: 1px solid #d5e3d7;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    z-index: 1000;
+}
+
+.search-panel.show {
+    display: block;
+}
+
+.search-panel input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b7cbb9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+#searchResults {
+    margin-top: 10px;
+}
+
+.search-result {
+    display: block;
+    padding: 10px;
+    color: #245c3a;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.search-result:hover {
+    background: #edf5ee;
+}
+
+.search-message {
+    color: #68776b;
+    font-size: 13px;
+    padding: 8px;
+}
+.search-result {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px;
+    color: #245c3a;
+    text-decoration: none;
+    border-radius: 8px;
+    border-bottom: 1px solid #e5eee6;
+}
+
+.search-result strong {
+    font-size: 16px;
+}
+
+.search-result span {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #68776b;
+}
+
+.search-result:hover {
+    background: #edf5ee;
+}
+
+/* =====================================
+   THE JOURNEY IN KENYA
+===================================== */
+
+.kenya-map-section {
+    margin: 30px 0;
+}
+
+.kenya-map-section h2 {
+    color: #69468c;
+}
+
+.kenya-map {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 570px;
+    margin: 25px auto;
+    overflow: hidden;
+    border: 2px solid #cbb6df;
+    border-radius: 18px;
+    background: #edf5ed;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.map-heading {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #245c3a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.map-heading > span:first-child {
+    font-size: 25px;
+}
+
+.map-subtitle {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.kenya-outline,
+.map-route {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    left: 7%;
+    top: 9%;
+}
+
+.kenya-outline {
+    z-index: 1;
+}
+
+.map-route {
+    z-index: 2;
+    pointer-events: none;
+}
+
+.map-stop {
+    position: absolute;
+    z-index: 4;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: #8861aa;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.map-stop:hover {
+    transform: scale(1.15);
+}
+
+.map-stop.active {
+    background: #34764a;
+    transform: scale(1.15);
+}
+
+.stop-one {
+    left: 25%;
+    top: 29%;
+}
+
+.stop-two {
+    left: 42%;
+    top: 48%;
+}
+
+.stop-three {
+    left: 55%;
+    top: 57%;
+}
+
+.stop-four {
+    left: 65%;
+    top: 72%;
+}
+
+.map-label {
+    position: absolute;
+    z-index: 3;
+    font-size: 12px;
+    font-weight: bold;
+    color: #435548;
+    background: rgba(255,255,255,0.85);
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.label-one {
+    left: 7%;
+    top: 24%;
+}
+
+.label-two {
+    left: 46%;
+    top: 45%;
+}
+
+.label-three {
+    left: 57%;
+    top: 54%;
+}
+
+.label-four {
+    left: 70%;
+    top: 72%;
+}
+
+.map-north {
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    z-index: 3;
+    color: #245c3a;
+    font-weight: bold;
+}
+
+.map-note {
+    color: #68776b;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -12px;
+}
+
+
+/* MAP INFORMATION PANEL */
+
+.map-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    background: #f5f0fa;
+    border: 2px solid #cbb6df;
+    border-radius: 15px;
+    padding: 22px;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.map-info-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+.map-stop-number {
+    color: #8861aa;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.map-info-content h2 {
+    color: #69468c;
+    margin: 10px 0;
+}
+
+.map-location {
+    color: #8861aa;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.map-info-content > p {
+    line-height: 1.7;
+    color: #574b63;
+}
+
+
+/* MAP NAVIGATION BUTTONS */
+
+.map-navigation {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.map-navigation button {
+    border: none;
+    background: #69468c;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.map-navigation button:hover {
+    background: #50336d;
+}
+
+.map-navigation button:disabled {
+    background: #c8bdcf;
+    cursor: not-allowed;
+}
+
+
+/* KENYA INFORMATION BOXES */
+
+.kenya-box {
+    background: #f5f0fa;
+    border: 2px solid #cbb6df;
+    border-left: 6px solid #8861aa;
+}
+
+.kenya-box h2 {
+    color: #69468c;
+}
+
+.kenya-box p {
+    color: #574b63;
+    line-height: 1.8;
+}
+
+.kenya-box a {
+    display: inline-block;
+    color: white;
+    background: #69468c;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.kenya-box a:hover {
+    background: #50336d;
+}
+
+
+/* ENVIRONMENTAL IMPACT */
+
+.kenya-impact {
+    background: #f0e9f7;
+    border-color: #c3addb;
+}
+
+.kenya-impact h2 {
+    color: #69468c;
+}
+
+.kenya-impact .impact-items > div {
+    border-color: #cbb6df;
+}
+
+.kenya-impact .impact-items h3 {
+    color: #8861aa;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    .kenya-map {
+        height: 430px;
+    }
+
+    .map-information {
+        grid-template-columns: 1fr;
+    }
+
+    .map-info-image img {
+        height: 210px;
+    }
+
+    .map-label {
+        font-size: 10px;
+    }
+
+    .map-stop {
+        width: 38px;
+        height: 38px;
+    }
+
+}
